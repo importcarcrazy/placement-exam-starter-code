@@ -20,6 +20,8 @@ document.getElementById('add-gb').addEventListener('click', function() {
     // TODO: Write the code to be run when the buttons for "Gingerbread" are clicked
 })
 var count1 = 0;
+var count2 = 0;
+var count3 = 0;
 var up1 = document.getElementById("add-gb");
 var qtygb = document.getElementById("qtygb");
 var dwn1 = document.getElementById("minus-gb");
@@ -31,6 +33,7 @@ up1.onclick = function () {
         count1 = 0
     }
     qtygb.innerHTML = count1;
+    all.innerHTML = count1 + count2 + count3;
 }
 dwn1.onclick = function () {
     count1--;
@@ -38,9 +41,10 @@ dwn1.onclick = function () {
         count1=0
     }
     qtygb.innerHTML = count1;
+    all.innerHTML = count1 + count2 + count3;
     }
     // TODO: Write the code to be run when the buttons for "Chocolate Chip" are clicked
-var count2 = 0;
+
 var up2 = document.getElementById("add-cc");
 var qtycc = document.getElementById("qtycc");
 var dwn2 = document.getElementById("minus-cc");
@@ -52,6 +56,7 @@ up2.onclick = function () {
         count2 = 0
     }
     qtycc.innerHTML = count2;
+    all.innerHTML = count1 + count2 + count3;
 }
 dwn2.onclick = function () {
     count2--;
@@ -59,10 +64,11 @@ dwn2.onclick = function () {
         count2=0
     }
     qtycc.innerHTML = count2;
+    all.innerHTML = count1 + count2 + count3;
     }
 
     // TODO: Write the code to be run when the buttons for "Sugar Sprinkle" are clicked
-var count3 = 0
+
 var up3 = document.getElementById("add-sugar");
 var qtysugar = document.getElementById("qtysugar");
 var dwn3 = document.getElementById("minus-sugar");
@@ -74,6 +80,7 @@ up3.onclick = function () {
         count3 = 0
     }
     qtysugar.innerHTML = count3;
+    all.innerHTML = count1 + count2 + count3;
 }
 dwn3.onclick = function () {
     count3--;
@@ -81,8 +88,9 @@ dwn3.onclick = function () {
         count3=0
     }
     qtysugar.innerHTML = count3;
+    all.innerHTML = count1 + count2 + count3;
 }
     // TODO: Write the code to total all cookies ordered
-        all.innerHTML = count1 + count2 + count3;
+
     
     
